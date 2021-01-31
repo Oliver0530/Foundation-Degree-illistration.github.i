@@ -1,0 +1,272 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+/* ------ BACKGROUND IMAGE ------- */
+body { 
+    background-color: #212329;
+
+    /* background-image: url(../img/Kizzi-Stone-Background.jpg); */
+    /* background-size: 100%; */
+    /* background-size: 400px 460px; */
+}
+
+
+/*  --------------------Mobile Nav Bar ------------- */
+/* Style the navigation menu */
+.topnav a h2 {
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    background-color: #212329;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ff1a8c;
+    padding: 18px;
+    padding-bottom: 20px;
+    opacity: 0.7;
+    color: black;
+    transition: 0.6s ease-out;
+
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #212329;
+}
+
+
+
+/* --------- SLIDE-SHOW----------- */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    /* background-color: rgba(0,0,0,0.8); */
+    background-color: #ff1a8c;
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ff1a8c;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    /* background-color: #717171; */
+    background-color: white; 
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* ------------ HOME PAGE INTRODUCTION ------------ */
+.Home-introduction {
+    /* background: white; */
+    background-color: #212329;
+    font-size: 100px;
+    color: white;
+    padding: 100px;
+    opacity: 0.7;
+    font-size: 30px;
+}
+
+.Home-introduction h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.Home-introduction h1:hover {
+    color: #ff1a8c;
+    transition: 0.5s ease-out;
+}
+
+.Home-introduction p {
+    font-size: 30px;
+}
+
+.Home-introduction p:hover {
+    color: #ff1a8c;
+    transition: 0.5s ease-out;
+}
+
+
+
+
+/* ------------ FOOTER --------- */
+.footer-container {
+    background-color:#212329;
+    padding: 4rem 0 2rem 0;
+}
+
+.footer {
+    width: 80%;
+    height: 20vh;
+    background-color: #212329;
+    color: #fff;
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading p {
+    color: #fff;
+    padding: 0 0px 0 0;
+    text-decoration: none;
+}
+
+.footer-heading p:hover {
+    color: #ff1a8c;
+    transition: 0.5s ease-out;
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    .footer-container {
+        padding: 10vh;
+    }
+    .Home-introduction {
+        padding: 50px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    .footer-container {
+        padding: 10vh;
+    }
+    .Home-introduction {
+        padding: 50px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Home-introduction {
+        padding: 130px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .Home-introduction {
+        padding: 100px 150px 100px 150px;
+    }
+}
