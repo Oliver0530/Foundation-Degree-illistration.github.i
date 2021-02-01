@@ -3,13 +3,16 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     list-style: none;
 }
 
 /* ------ BACKGROUND IMAGE ------- */
 body { 
     background-color: #212329;
-
+    /* background-image:url(../img//art-img.jpg); */
+    background-size: auto;
+    background-size: cover;
     /* background-image: url(../img/Kizzi-Stone-Background.jpg); */
     /* background-size: 100%; */
     /* background-size: 400px 460px; */
@@ -67,6 +70,8 @@ body {
 .active {
     background-color: #212329;
 }
+
+
 
 
 
@@ -170,7 +175,7 @@ body {
 /* ------------ HOME PAGE INTRODUCTION ------------ */
 .Home-introduction {
     /* background: white; */
-    background-color: #212329;
+    /* background-color: #212329; */
     font-size: 100px;
     color: white;
     padding: 100px;
@@ -180,7 +185,7 @@ body {
 
 .Home-introduction h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .Home-introduction h1:hover {
@@ -189,7 +194,8 @@ body {
 }
 
 .Home-introduction p {
-    font-size: 30px;
+    /* text-align: center; */
+    font-size: 35px;
 }
 
 .Home-introduction p:hover {
@@ -199,17 +205,16 @@ body {
 
 
 
-
 /* ------------ FOOTER --------- */
 .footer-container {
-    background-color:#212329;
+    /* background-color:#212329; */
     padding: 4rem 0 2rem 0;
 }
 
 .footer {
     width: 80%;
     height: 20vh;
-    background-color: #212329;
+    /* background-color: #212329; */
     color: #fff;
     display : flex;
     justify-content: center;
@@ -240,36 +245,97 @@ body {
 }
 
 
-
-@media screen and (max-width: 375px) {
-
-    .footer-container {
-        padding: 10vh;
+@media screen and (min-width: 188px) {
+    .topnav a:hover {
+    padding: 7px;
     }
+
+    /* Title */
+    .topnav a h2 {
+        font-size: 15px;
+    }
+
+    /* Main Section */
     .Home-introduction {
-        padding: 50px 50px 50px 50px;
+        padding: 30px 20px 50px 20px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    /* Paragraph Title */
+    .Home-introduction h1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    /* Paragraph */
+    .Home-introduction p {
+        font-size: 15px;
+        line-height: 23px;
     }
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (min-width: 230px) {
 
-    .footer-container {
-        padding: 10vh;
+    /* Hamburger Menu */
+    .topnav a:hover {
+    padding: 15px 15px 30px 10px;
     }
-    .Home-introduction {
-        padding: 50px 100px 50px 100px;
+
+    /* Title */
+    .topnav a h2 {
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 300px) {
+
+    .Home-introduction {
+        padding: 40px 30px 50px 30px;
+        width: 100%;
+    }
+    .Home-introduction h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .Home-introduction p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .Home-introduction {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+
+    .Home-introduction {
+        padding: 50px 40px 50px 40px;
+        width: 100%;
+    }
+    .Home-introduction h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .Home-introduction p {
+        font-size: 17px;
+        line-height: 35px;
+    }
+    .Home-introduction {
+        font-size: 15px;
+    }
+}
+
+
+/* @media screen and (max-width: 1200px) {
     .Home-introduction {
         padding: 130px 100px 50px 100px;
     }
-}
+} */
 
-@media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1900px) {
     .Home-introduction {
-        padding: 100px 150px 100px 150px;
+        padding: 100px 200px 100px 200px;
     }
-}
+} */
 
