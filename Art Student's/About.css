@@ -72,9 +72,6 @@ body {
 }
 
 
-
-
-
 /* --------- SLIDE-SHOW----------- */
 /* Slideshow container */
 .slideshow-container {
@@ -172,36 +169,44 @@ body {
 }
 
 
-/* ------------ HOME PAGE INTRODUCTION ------------ */
-.Home-introduction {
-    /* background: white; */
-    /* background-color: #212329; */
-    font-size: 100px;
-    color: white;
-    padding: 100px;
-    opacity: 0.7;
-    font-size: 30px;
+
+
+/* ------------ Student Page Image's ------------ */
+
+/* .child {
+    box-sizing: border-box;
+} */
+
+/* Student Image One */ 
+.Home-introduction .image-1 img {
+    padding: 0px 10px 10px 10px;
+    width: 270px;
+    height: 200px;
+    /* width: 50%; */
+    /* float: left; */
+    object-fit: contain;
 }
 
-.Home-introduction h1 {
-    text-align: center;
-    font-size: 60px;
+.Home-introduction .image-2 img {
+    border-radius: 25px;
+    padding: 0px 10px 10px 10px;
+    width: 270px;
+    height: 200px;
+    object-fit: contain;
+    /* width: 50%; */
+    /* float: left; */
 }
 
-.Home-introduction h1:hover {
-    color: #ff1a8c;
-    transition: 0.5s ease-out;
+.Home-introduction .image-3 img {
+    border-radius: 25px;
+    padding: 0px 10px 10px 10px;
+    width: 270px;
+    height: 200px;
+    object-fit: contain;
 }
 
-.Home-introduction p {
-    /* text-align: center; */
-    font-size: 35px;
-}
 
-.Home-introduction p:hover {
-    color: #ff1a8c;
-    transition: 0.5s ease-out;
-}
+
 
 
 
@@ -245,7 +250,12 @@ body {
 }
 
 
+
+
+
+/* --------- Compatable ------------ */
 @media screen and (min-width: 188px) {
+
     .topnav a:hover {
     padding: 7px;
     }
@@ -253,24 +263,6 @@ body {
     /* Title */
     .topnav a h2 {
         font-size: 15px;
-    }
-
-    /* Main Section */
-    .Home-introduction {
-        padding: 30px 20px 50px 20px;
-        width: 100%;
-        font-size: 15px;
-    }
-
-    /* Paragraph Title */
-    .Home-introduction h1 {
-        font-size: 15px;
-        line-height: 20px;
-    }
-    /* Paragraph */
-    .Home-introduction p {
-        font-size: 15px;
-        line-height: 23px;
     }
 }
 
@@ -285,85 +277,206 @@ body {
     .topnav a h2 {
         font-size: 18px;
     }
+
+    .Home-introduction .image-1 img {
+        padding: 10px 10px 20px 0px;
+        width: 310px;
+        height: 170px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 10px 10px 20px 0px;
+        width: 310px;
+        height: 170px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 10px 10px 20px 0px;
+        width: 310px;
+        height: 170px;
+        /* object-fit: contain; */
+    }
 }
+
 
 
 @media screen and (min-width: 300px) {
 
-    .Home-introduction {
-        padding: 40px 30px 50px 30px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 50px 20px 60px;
+        width: 350px;
+        height: 200px;
+        /* width: 50%; */
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        font-size: 20px;
-        line-height: 20px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 50px 20px 60px;
+        width: 350px;
+        height: 200px;
+        /* object-fit: contain; */
     }
-    .Home-introduction p {
-        font-size: 15px;
-        line-height: 23px;
+
+    .Home-introduction .image-3 img {
+        padding: 20px 50px 40px 60px;
+        width: 350px;
+        height: 240px;
+        /* object-fit: contain; */
     }
-    .Home-introduction {
-        font-size: 15px;
+
+    .slideshow-container {
+        min-width: 330px;
     }
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 400px) { 
 
-    .Home-introduction {
-        padding: 50px 30px 50px 40px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 10px 20px 50px;
+        width: 380px;
+        height: 220px;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 20px;
-        font-size: 20px;
-        line-height: 23px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 10px 20px 50px;
+        width: 380px;
+        height: 220px;
+        /* object-fit: contain; */
     }
-    .Home-introduction p {
-        font-size: 20px;
-        line-height: 23px;
-    }
-    .Home-introduction {
-        font-size: 15px;
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 20px 50px;
+        width: 380px;
+        height: 220px;
+        /* object-fit: contain; */
     }
 }
+
+@media screen and (min-width: 500px) {
+
+    .Home-introduction .image-1 img {
+        padding: 20px 10px 20px 80px;
+        width: 500px;
+        height: 250px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 20px 10px 20px 80px;
+        width: 500px;
+        height: 250px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 40px 80px;
+        width: 500px;
+        height: 280px;
+        /* object-fit: contain; */
+    }
+}
+
 
 @media screen and (min-width: 600px) {
 
-    .Home-introduction {
-        padding: 50px 80px 50px 80px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 10px 20px 90px;
+        width: 550px;
+        height: 250px;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 20px;
-        font-size: 23px;
-        line-height: 23px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 10px 20px 90px;
+        width: 550px;
+        height: 250px;
+        /* object-fit: contain; */
     }
-    .Home-introduction p {
-        font-size: 20px;
-        line-height: 23px;
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 20px 90px;
+        width: 550px;
+        height: 250px;
+        /* object-fit: contain; */
     }
-    .Home-introduction {
-        font-size: 15px;
+}
+
+@media screen and (min-width: 700px) {
+
+    .Home-introduction .image-1 img {
+        padding: 20px 10px 20px 170px;
+        width: 600px;
+        height: 300px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 20px 10px 20px 170px;
+        width: 600px;
+        height: 300px;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 20px 170px;
+        width: 600px;
+        height: 300px;
+        /* object-fit: contain; */
     }
 }
 
 @media screen and (min-width: 800px) {
 
-    .Home-introduction {
-        padding: 50px 100px 50px 100px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 10px 20px 210px;
+        width: 660px;
+        height: 330px;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 20px;
-        font-size: 25px;
-        line-height: 23px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 10px 20px 210px;
+        width: 660px;
+        height: 330px;
+        /* object-fit: contain; */
     }
-    .Home-introduction p {
-        font-size: 20px;
-        line-height: 30px;
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 20px 210px;
+        width: 660px;
+        height: 330px;
+        /* object-fit: contain; */
     }
-    .Home-introduction {
-        font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+
+    .Home-introduction .image-1 img {
+        padding: 20px 20px 20px 30px;
+        /* width: 150px; */
+        height: 270px;
+        width: 50%;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 20px 20px 20px 0px;
+        /* width: 150px; */
+        height: 270px;
+        width: 50%;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 20px 10px 40px 20px;
+        height: 290px;
+        width: 50%;
+        /* object-fit: contain; */
     }
 }
 
@@ -373,21 +486,27 @@ body {
         max-width: 1100px;
     }
 
-    .Home-introduction {
-        padding: 50px 130px 80px 130px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 0px 20px 0px 130px;
+        height: 305px;
+        width: 500px;
+        /* width: 50%; */
+        float: left;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 40px;
-        font-size: 25px;
-        line-height: 23px;
+
+    .Home-introduction .image-2 img {
+        padding: 10px 20px 20px 150px;
+        height: 315px;
+        width: 525px;
+        float: left;
     }
-    .Home-introduction p {
-        font-size: 22px;
-        line-height: 30px;
-    }
-    .Home-introduction {
-        font-size: 15px;
+
+    .Home-introduction .image-3 img {
+        padding: 30px 20px 40px 125px;
+        height: 300px;
+        width: 500px;
+        object-fit: contain;
     }
 }
 
@@ -396,12 +515,56 @@ body {
     .slideshow-container {
         min-width: 1200px;
     }
+
+    .Home-introduction .image-1 img {
+        padding: 0px 20px 0px 160px;
+        height: 305px;
+        width: 525px;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 10px 20px 20px 150px;
+        height: 315px;
+        width: 520px;
+        float: left;
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 40px 20px 70px 100px;
+        height: 340px;
+        width: 590px;
+        object-fit: contain;
+    }
 }
 
 @media screen and (min-width: 1300px) {
 
     .slideshow-container {
         min-width: 1300px;
+    }
+
+    .Home-introduction .image-1 img {
+        padding: 0px 20px 0px 200px;
+        height: 300px;
+        width: 600px;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 10px 20px 20px 200px;
+        height: 310px;
+        width: 600px;
+        float: left;
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 60px 20px 70px 180px;
+        height: 390px;
+        width: 620px;
+        object-fit: contain;
     }
 }
 
@@ -411,21 +574,25 @@ body {
         min-width: 1400px;
     }
 
-    .Home-introduction {
-        padding: 50px 200px 80px 200px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 20px 0px 230px;
+        height: 280px;
+        width: 650px;
+        float: left;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 40px;
-        font-size: 30px;
-        line-height: 23px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 20px 20px 140px;
+        height: 300px;
+        width: 600px;
+        float: left;
     }
-    .Home-introduction p {
-        font-size: 23px;
-        line-height: 30px;
-    }
-    .Home-introduction {
-        font-size: 15px;
+
+    .Home-introduction .image-3 img {
+        padding: 60px 20px 40px 230px;
+        height: 380px;
+        width:  650px;
     }
 }
 
@@ -433,6 +600,27 @@ body {
 
     .slideshow-container {
         min-width: 1500px;
+    }
+
+    .Home-introduction .image-1 img {
+        padding: 20px 20px 0px 290px;
+        height: 320px;
+        width: 700px;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 20px 20px 20px 200px;
+        height: 320px;
+        width: 600px;
+        float: left;
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 60px 20px 40px 280px;
+        height: 380px;
+        width:  695px;
     }
 }
 
@@ -442,21 +630,25 @@ body {
         min-width: 1600px;
     }
 
-    .Home-introduction {
-        padding: 50px 230px 80px 230px;
-        width: 100%;
+    .Home-introduction .image-1 img {
+        padding: 20px 20px 0px 290px;
+        height: 320px;
+        width: 700px;
+        float: left;
+        /* object-fit: contain; */
     }
-    .Home-introduction h1 {
-        padding-bottom: 40px;
-        font-size: 34px;
-        line-height: 25px;
+
+    .Home-introduction .image-2 img {
+        padding: 20px 20px 20px 200px;
+        height: 320px;
+        width: 600px;
+        float: left;
     }
-    .Home-introduction p {
-        font-size: 23px;
-        line-height: 35px;
-    }
-    .Home-introduction {
-        font-size: 15px;
+
+    .Home-introduction .image-3 img {
+        padding: 60px 20px 40px 280px;
+        height: 380px;
+        width:  695px;
     }
 }
 
@@ -464,6 +656,27 @@ body {
 
     .slideshow-container {
         min-width: 1700px;
+    }
+
+    .Home-introduction .image-1 img {
+        padding: 20px 20px 0px 390px;
+        height: 310px;
+        width: 820px;
+        float: left;
+        /* object-fit: contain; */
+    }
+
+    .Home-introduction .image-2 img {
+        padding: 20px 20px 20px 280px;
+        height: 320px;
+        width: 800px;
+        float: left;
+    }
+
+    .Home-introduction .image-3 img {
+        padding: 100px 20px 40px 390px;
+        height: 500px;
+        width: 820px;
     }
 }
 
@@ -490,16 +703,4 @@ body {
 
 
 
-
-/* @media screen and (max-width: 1200px) {
-    .Home-introduction {
-        padding: 130px 100px 50px 100px;
-    }
-} */
-
-/* @media screen and (max-width: 1900px) {
-    .Home-introduction {
-        padding: 100px 200px 100px 200px;
-    }
-} */
-
+  
