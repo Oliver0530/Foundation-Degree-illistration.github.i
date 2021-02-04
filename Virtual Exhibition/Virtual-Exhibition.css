@@ -42,7 +42,7 @@ body {
     background-color: #212329;
     padding: 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: block;
 }
 
@@ -58,6 +58,7 @@ body {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
     background-color: #ff1a8c;
+    font-size: 20px;
     padding: 18px;
     /* padding-bottom: 20px; */
     opacity: 0.7;
@@ -87,7 +88,12 @@ body {
     text-align: center;
 }
 
-.About-section:hover {
+.About-section h1:hover {
+    color: #ff1a8c;
+    transition: 0.6s ease-out;
+}
+
+.About-section p:hover {
     color: #ff1a8c;
     transition: 0.6s ease-out;
 }
@@ -169,7 +175,6 @@ body {
 }
 
 .active, .dot:hover {
-    /* background-color: #717171; */
     background-color: white; 
 }
 
@@ -190,8 +195,6 @@ body {
     from {opacity: .4}
     to {opacity: 1}
 }
-
-
 
 
 /* ------------ Student Page Image's ------------ */
@@ -289,6 +292,20 @@ body {
 
 @media screen and (min-width: 230px) {
 
+    .About-section {
+        padding: 0 0 0 0px;
+    }
+
+    .About-section h1 {
+        padding: 20px 0 0 0px;
+        font-size: 20px;
+    }
+
+    .About-section p {
+        padding: 0px 0px 20px 40px;
+        font-size: 14px;
+    }
+
     /* Hamburger Menu */
     .topnav a:hover {
     padding: 15px 15px 30px 10px;
@@ -318,12 +335,26 @@ body {
         width: 310px;
         height: 170px;
         /* object-fit: contain; */
-    }
+    }     
 }
 
 
 
 @media screen and (min-width: 300px) {
+
+    .About-section {
+        padding: 0 0 0 0px;
+    }
+
+    .About-section h1 {
+        padding: 20px 0 0 0px;
+        font-size: 20px;
+    }
+
+    .About-section p {
+        padding: 0px 20px 20px 40px;
+        font-size: 14px;
+    }
 
     .Home-introduction .image-1 img {
         padding: 20px 50px 20px 60px;
@@ -451,6 +482,16 @@ body {
 
 @media screen and (min-width: 800px) {
 
+    .About-section h1 {
+        padding: 20px 0 0 0px;
+        font-size: 25px;
+    }
+
+    .About-section p {
+        padding: 0px 30px 20px 40px;
+        font-size: 18px;
+    }
+
     .Home-introduction .image-1 img {
         padding: 20px 10px 20px 210px;
         width: 660px;
@@ -474,6 +515,16 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+
+    .About-section h1 {
+        padding: 20px 0 0 0px;
+        font-size: 25px;
+    }
+
+    .About-section p {
+        padding: 0px 60px 40px 60px;
+        font-size: 18px;
+    }
 
     .Home-introduction .image-1 img {
         padding: 20px 20px 20px 30px;
@@ -532,6 +583,16 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+
+    .About-section h1 {
+        padding: 20px 0 0 0px;
+        font-size: 25px;
+    }
+
+    .About-section p {
+        padding: 0px 100px 40px 100px;
+        font-size: 18px;
+    }
 
     .slideshow-container {
         min-width: 1200px;
